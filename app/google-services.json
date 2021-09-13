@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:7789010112:android:7a6e00d32e0bafb3b1e125",
         "android_client_info": {
-          "package_name": "com.allin.onedownloader"
+          "package_name": "my.video.saver"
         }
       },
       "oauth_client": [

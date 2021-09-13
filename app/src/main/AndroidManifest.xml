@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.allin.onedownloader">
+    package="my.video.saver">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
     <application
-        android:name="com.allin.onedownloader.MyApplication"
+        android:name="my.video.saver.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,30 +21,31 @@
 
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.allin.onedownloader.activity.LoginActivity"
+        <activity android:name="my.video.saver.activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.AboutUsActivity"
+            android:name="my.video.saver.activity.AboutUsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.FacebookActivity"
+            android:name="my.video.saver.activity.FacebookActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.TikTokActivity"
+            android:name="my.video.saver.activity.TikTokActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.WhatsappActivity"
+            android:name="my.video.saver.activity.WhatsappActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.InstagramActivity"
+            android:name="my.video.saver.activity.InstagramActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.FullViewActivity"
+            android:name="my.video.saver.activity.FullViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.allin.onedownloader.activity.LikeeActivity"
+        <activity android:name="my.video.saver.activity.LikeeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.allin.onedownloader.activity.SplashScreen"
+            android:name="my.video.saver.activity.SplashScreen"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,10 +54,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.allin.onedownloader.activity.GalleryActivity"
+            android:name="my.video.saver.activity.GalleryActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.MainActivity"
+            android:name="my.video.saver.activity.MainActivity"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -82,10 +83,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.allin.onedownloader.activity.WebviewAcitivity"
+            android:name="my.video.saver.activity.WebviewAcitivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.allin.onedownloader.activity.TwitterActivity"
+            android:name="my.video.saver.activity.TwitterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
@@ -93,7 +94,7 @@
             android:value="@string/admob_app_id" />
 
         <service
-            android:name="com.allin.onedownloader.MyFirebaseMessagingService"
+            android:name="my.video.saver.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
