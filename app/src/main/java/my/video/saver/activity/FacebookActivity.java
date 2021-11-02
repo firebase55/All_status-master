@@ -91,30 +91,11 @@ public class FacebookActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        binding.imInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                binding.layoutHowTo.LLHowToLayout.setVisibility(View.VISIBLE);
-            }
-        });
-
-
+        binding.imInfo.setOnClickListener(view -> binding.layoutHowTo.LLHowToLayout.setVisibility(View.VISIBLE));
 
         Glide.with(activity)
-                .load(R.drawable.fb1)
+                .load(R.drawable.facebook_use_night_error)
                 .into(binding.layoutHowTo.imHowto1);
-
-        Glide.with(activity)
-                .load(R.drawable.fb2)
-                .into(binding.layoutHowTo.imHowto2);
-
-        Glide.with(activity)
-                .load(R.drawable.fb3)
-                .into(binding.layoutHowTo.imHowto3);
-
-        Glide.with(activity)
-                .load(R.drawable.fb4)
-                .into(binding.layoutHowTo.imHowto4);
 
 
         binding.layoutHowTo.tvHowTo1.setText(getResources().getString(R.string.opn_fb));

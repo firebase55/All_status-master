@@ -48,13 +48,8 @@ public class TwitterActivity extends AppCompatActivity {
     CommonClassForAPI commonClassForAPI;
     private String VideoUrl;
     private ClipboardManager clipBoard;
-
-
-
     AppLangSessionManager appLangSessionManager;
     private InterstitialAd mInterstitialAd;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,19 +59,10 @@ public class TwitterActivity extends AppCompatActivity {
         commonClassForAPI = CommonClassForAPI.getInstance(activity);
         createFileFolder();
         initViews();
-
         appLangSessionManager = new AppLangSessionManager(activity);
         setLocale(appLangSessionManager.getLanguage());
-
         AdsUtils.showGoogleBannerAd(activity,binding.adView);
         InterstitialAdsINIT();
-
-
-
-
-
-
-
     }
 
     @Override
@@ -107,20 +93,9 @@ public class TwitterActivity extends AppCompatActivity {
 
 
         Glide.with(activity)
-                .load(R.drawable.tw1)
+                .load(R.drawable.twitter_use_night_error)
                 .into(binding.layoutHowTo.imHowto1);
 
-        Glide.with(activity)
-                .load(R.drawable.tw2)
-                .into(binding.layoutHowTo.imHowto2);
-
-        Glide.with(activity)
-                .load(R.drawable.tw3)
-                .into(binding.layoutHowTo.imHowto3);
-
-        Glide.with(activity)
-                .load(R.drawable.tw4)
-                .into(binding.layoutHowTo.imHowto4);
 
 
 
@@ -132,7 +107,6 @@ public class TwitterActivity extends AppCompatActivity {
         }else {
             binding.layoutHowTo.LLHowToLayout.setVisibility(View.GONE);
         }
-
 
         binding.loginBtn1.setOnClickListener(v -> {
             String LL = binding.etText.getText().toString();

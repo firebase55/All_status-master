@@ -19,11 +19,13 @@ import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
 
 import my.video.saver.R;
@@ -125,22 +127,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             checkPermissions(0);
         }
 
-//        binding.rvLikee.setOnClickListener(this);
+        binding.rvLikee.setOnClickListener(this);
         binding.rvInsta.setOnClickListener(this);
         binding.rvWhatsApp.setOnClickListener(this);
-    //    binding.rvTikTok.setOnClickListener(this);
+        binding.rvTikTok.setOnClickListener(this);
         binding.rvFB.setOnClickListener(this);
         binding.rvTwitter.setOnClickListener(this);
         binding.rvGallery.setOnClickListener(this);
-        binding.rvAbout.setOnClickListener(this);
-        binding.rvShareApp.setOnClickListener(this);
-        binding.rvRateApp.setOnClickListener(this);
-        binding.rvMoreApp.setOnClickListener(this);
+
+//        binding.rvAbout.setOnClickListener(this);
+//        binding.rvShareApp.setOnClickListener(this);
+//        binding.rvRateApp.setOnClickListener(this);
+//        binding.rvMoreApp.setOnClickListener(this);
 
 
 
 
     }
+
 
     private void callText(String CopiedText) {
         try {
@@ -154,9 +158,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }catch (Exception ex){
 
                 }
-
-
-
 
                 if (Build.VERSION.SDK_INT >= 23) {
                     checkPermissions(100);
@@ -247,20 +248,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     callTwitterActivity();
                 }
-                break;
-            case R.id.rvAbout:
-                i = new Intent(activity, AboutUsActivity.class);
-                startActivity(i);
-                break;
-            case R.id.rvShareApp:
-                Utils.ShareApp(activity);
-                break;
-
-            case R.id.rvRateApp:
-                Utils.RateApp(activity);
-                break;
-            case R.id.rvMoreApp:
-                Utils.MoreApp(activity);
                 break;
 
         }
@@ -372,7 +359,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else if (type == 106) {
                 callTwitterActivity();
             }
-
         }
         return true;
     }
@@ -454,13 +440,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-
-
-
         Intent refresh = new Intent(MainActivity.this, MainActivity.class);
         startActivity(refresh);
         finish();
     }
 
 
+    public void about_us(View view)
+    {
+        Intent intent = new Intent(MainActivity.this,about_us_Activity.class);
+        startActivity(intent);
+    }
 }

@@ -117,31 +117,12 @@ public class InstagramActivity extends AppCompatActivity implements UserListInte
                 onBackPressed();
             }
         });
-        binding.imInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                binding.layoutHowTo.LLHowToLayout.setVisibility(View.VISIBLE);
-            }
-        });
+        binding.imInfo.setOnClickListener(view -> binding.layoutHowTo.LLHowToLayout.setVisibility(View.VISIBLE));
 
 
         Glide.with(activity)
-                .load(R.drawable.insta1)
+                .load(R.drawable.instagram_use_night_error)
                 .into(binding.layoutHowTo.imHowto1);
-
-        Glide.with(activity)
-                .load(R.drawable.insta2)
-                .into(binding.layoutHowTo.imHowto2);
-
-        Glide.with(activity)
-                .load(R.drawable.insta3)
-                .into(binding.layoutHowTo.imHowto3);
-
-        Glide.with(activity)
-                .load(R.drawable.insta4)
-                .into(binding.layoutHowTo.imHowto4);
-
-
         binding.layoutHowTo.tvHowTo1.setText(getResources().getString(R.string.opn_insta));
         binding.layoutHowTo.tvHowTo3.setText(getResources().getString(R.string.opn_insta));
         if (!SharePrefs.getInstance(activity).getBoolean(SharePrefs.ISSHOWHOWTOINSTA)) {
@@ -170,9 +151,9 @@ public class InstagramActivity extends AppCompatActivity implements UserListInte
         binding.tvPaste.setOnClickListener(v -> {
             PasteText();
         });
-        binding.LLOpenInstagram.setOnClickListener(v -> {
-            Utils.OpenApp(activity,"com.instagram.android");
-        });
+//        binding.LLOpenInstagram.setOnClickListener(v -> {
+//            Utils.OpenApp(activity,"com.instagram.android");
+//        });
 
         GridLayoutManager mLayoutManager = new GridLayoutManager(getApplicationContext(), 1);
         binding.RVUserList.setLayoutManager(mLayoutManager);

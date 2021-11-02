@@ -15,19 +15,20 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:id="@+id/RLTop">
 
                 <ImageView
                     android:id="@+id/imBack"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
-                    android:layout_margin="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
                     android:padding="5dp"
-                    android:tint="@color/white"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_arrow" />
+                    android:src="@drawable/ic_back_night_error" />
                 <TextView
                     android:id="@+id/TVTitle"
                     android:layout_width="wrap_content"

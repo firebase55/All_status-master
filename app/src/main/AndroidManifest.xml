@@ -7,44 +7,43 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-
     <application
-        android:name="my.video.saver.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo_night_error"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
-
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="my.video.saver.activity.LoginActivity"
+        <activity
+            android:name=".activity.about_us_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.AboutUsActivity"
+            android:name=".activity.FacebookActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.FacebookActivity"
+            android:name=".activity.TikTokActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.TikTokActivity"
+            android:name=".activity.WhatsappActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.WhatsappActivity"
+            android:name=".activity.InstagramActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.InstagramActivity"
+            android:name=".activity.FullViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.FullViewActivity"
+            android:name=".activity.LikeeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="my.video.saver.activity.LikeeActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="my.video.saver.activity.SplashScreen"
+            android:name=".activity.SplashScreen"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -54,10 +53,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="my.video.saver.activity.GalleryActivity"
+            android:name=".activity.GalleryActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -83,25 +82,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="my.video.saver.activity.WebviewAcitivity"
+            android:name=".activity.WebviewAcitivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="my.video.saver.activity.TwitterActivity"
+            android:name=".activity.TwitterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
-
-        <service
-            android:name="my.video.saver.MyFirebaseMessagingService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@mipmap/ic_launcher_round" />

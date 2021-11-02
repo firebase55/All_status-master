@@ -23,57 +23,52 @@
                     android:id="@+id/RLTopLayout"
                     android:layout_width="match_parent"
                     android:layout_height="330dp"
-                    android:background="@drawable/rectangle_blue"
                     android:visibility="visible">
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:background="@color/colorPrimaryDark"
                         android:layout_height="wrap_content">
-
+                        <ImageView
+                            android:id="@+id/imBack"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_back_night_error" />
                         <ImageView
                             android:id="@+id/imInfo"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:padding="10dp"
-                            android:src="@drawable/ic_about"
+                            android:src="@drawable/ic_info_night_error"
                             android:tint="@color/white"
                             android:layout_centerVertical="true"
-                            android:layout_alignParentLeft="true"/>
-
-
-                        <ImageView
-                            android:id="@+id/imBack"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_margin="10dp"
-                            android:padding="5dp"
-                            android:tint="@color/white"
-                            android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/ic_arrow" />
+                            android:layout_alignParentEnd="true"/>
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="300dp">
+
                         <RelativeLayout
                             android:id="@+id/LLOpenTwitter"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:background="@drawable/rectangle_white"
+                            android:layout_centerInParent="true"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:padding="30dp"
-                            android:layout_centerVertical="true">
+                            android:padding="30dp">
 
                             <ImageView
                                 android:id="@+id/TVTitle"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
                                 android:layout_centerHorizontal="true"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
                                 android:background="@drawable/circle"
                                 android:padding="12dp"
-                                android:src="@drawable/ic_twitter" />
+                                android:src="@drawable/ic_twiter_app_icon_night_error" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -90,6 +85,7 @@
                     </RelativeLayout>
 
                 </RelativeLayout>
+
 
                 <LinearLayout
                     android:id="@+id/lnr_main"
@@ -120,7 +116,6 @@
                             android:hint="@string/paste_link"
                             android:padding="15dp"
                             android:singleLine="true"
-                            android:gravity="right|center_vertical"
                             android:textColor="@color/black"
                             android:textColorHint="@color/grey"
                             android:textSize="15sp" />
@@ -135,22 +130,20 @@
                             android:orientation="horizontal"
                             android:weightSum="2">
 
-
                             <TextView
                                 android:id="@+id/tv_paste"
+
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="2dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/et_back"
-                                android:backgroundTint="@color/colorPrimaryDark"
                                 android:gravity="center"
                                 android:padding="14dp"
                                 android:text="@string/paste"
                                 android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/paste_txt_size" />
-
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/download_txt_size" />
 
                             <TextView
                                 android:id="@+id/login_btn1"
@@ -165,12 +158,16 @@
                                 android:text="@string/download"
                                 android:textAllCaps="false"
                                 android:textColor="@color/white"
-                                android:textSize="@dimen/download_txt_size" />
-
+                                android:textSize="@dimen/paste_txt_size" />
 
                         </LinearLayout>
                     </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:layout_height="match_parent">
 
+                    </View>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -184,6 +181,7 @@
 
                     </LinearLayout>
                 </LinearLayout>
+
             </RelativeLayout>
         </ScrollView>
 

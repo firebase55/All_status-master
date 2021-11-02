@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:scrollbars="vertical"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                app:spanCount="3"
+                app:spanCount="2"
                 tools:listitem="@layout/items_file_view"
                 app:reverseLayout="false"
                 />

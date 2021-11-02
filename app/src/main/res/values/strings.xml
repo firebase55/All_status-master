@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">My Status Saver </string>
+    <string name="app_name" translatable="false">My Status Saver</string>
     <string name="tag_line" translatable="false">Download All Status on One Click</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -11,13 +11,9 @@
 
 
     <!--AdMob Id-->
-    <string name="admob_app_id" translatable="false">ca-app-pub-1295426853116668~3280707254</string>
-    <string name="admob_banner_ad" translatable="false">ca-app-pub-1295426853116668/5990631079 </string>
-    <string name="admob_interstitial_ad" translatable="false">ca-app-pub-1295426853116668/3070961875</string>
-
-
-
-
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_ad" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_ad" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="about_content">Version: 1.0\nDeveloped by:-\Firebase732@gmail.com</string>
     <string name="aboutInfo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
@@ -43,7 +39,6 @@
     <string name="rate_tag">Show Some Love. Rate on Play Store</string>
     <string name="more_app_name">More App</string>
     <string name="more_app_tag">View Our Other Creations</string>
-
     <!--About Page-->
     <string name="version_name">Version</string>
     <string name="version_tag"> Version 1.0.0</string>
@@ -65,7 +60,6 @@
     <string name="copy_video_link_frm_fb">1. Copy Video Link from Facebook</string>
     <string name="enter_url">Enter Url</string>
     <string name="enter_valid_url">Enter Valid Url</string>
-
     <string name="do_u_want_to_dlt">Do you want to delete?</string>
     <string name="file_deleted">File Deleted.</string>
     <string name="opn_insta">1. Open Instagram</string>
@@ -87,8 +81,6 @@
     <string name="saved_to">Saved to:</string>
     <string name="whatsapp_not_installed">Whtasapp not installed.</string>
     <string name="no_app_installed">No application found to open this file.</string>
-
-
     <string name="change_lang">Change Language</string>
     <string name="english">English</string>
     <string name="hindi">हिंदी</string>
@@ -108,8 +100,6 @@
     <string name="no_result_found">No Result Found</string>
     <string name="downloading">Downloading...</string>
     <string name="getting_downloading_link">Getting Downloading Link...</string>
-
-
     <string name="gallery">Gallery</string>
     <string name="download_started">Download Started</string>
     <string name="yes">Yes</string>
@@ -117,5 +107,10 @@
     <string name="view_stories">View Stories and Download from Private Account</string>
     <string name="login">Login</string>
     <string name="stories">Stories</string>
+    <string name="app_poliecy">App poliecy</string>
+    <string name="statu">Download All Status On One Click</string>
+    <string name="like_us">like us</string>
+    <string name="shareapp">shareApp</string>
+    <string name="about">About US</string>
 
 </resources>

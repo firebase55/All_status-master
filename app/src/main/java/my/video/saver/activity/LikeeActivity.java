@@ -149,20 +149,9 @@ public class LikeeActivity extends AppCompatActivity {
 
 
         Glide.with(activity)
-                .load(R.drawable.likee1)
+                .load(R.drawable.likee_use_night_error)
                 .into(binding.layoutHowTo.imHowto1);
 
-        Glide.with(activity)
-                .load(R.drawable.likee2)
-                .into(binding.layoutHowTo.imHowto2);
-
-        Glide.with(activity)
-                .load(R.drawable.likee3)
-                .into(binding.layoutHowTo.imHowto3);
-
-        Glide.with(activity)
-                .load(R.drawable.likee4)
-                .into(binding.layoutHowTo.imHowto4);
 
 
         binding.layoutHowTo.tvHowTo1.setText(getResources().getString(R.string.open_likee));

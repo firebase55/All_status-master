@@ -5,19 +5,19 @@
     android:layout_height="match_parent"
     android:layout_gravity="center">
 
-        <ImageView
-            android:id="@+id/im_fullViewImage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitCenter" />
+    <ImageView
+        android:id="@+id/im_fullViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
 
-        <ImageView
-            android:id="@+id/im_vpPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_play_circle_filled_black_24dp"
-            android:visibility="gone" />
+    <ImageView
+        android:id="@+id/im_vpPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play_circle_filled_black_24dp"
+        android:visibility="gone" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_share_black_24dp"
+                android:src="@drawable/ic_share"
                 android:tint="@color/white" />
 
             <TextView
@@ -66,7 +66,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_delete_black_24dp"
+                android:src="@drawable/ic_delet_video_nighr_error"
                 android:tint="@color/white" />
 
             <TextView

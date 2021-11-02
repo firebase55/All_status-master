@@ -9,7 +9,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/adView">
+            android:layout_above="@+id/adView"
+            >
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -21,54 +22,53 @@
                     android:id="@+id/RLTopLayout"
                     android:layout_width="match_parent"
                     android:layout_height="330dp"
-                    android:background="@drawable/rectangle_blue"
                     android:visibility="visible">
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:background="@color/colorPrimaryDark"
                         android:layout_height="wrap_content">
                         <ImageView
                             android:id="@+id/imBack"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_margin="10dp"
                             android:padding="5dp"
-                            android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/ic_arrow"
-                            android:tint="@color/white"/>
+                            android:src="@drawable/ic_back_night_error" />
                         <ImageView
                             android:id="@+id/imInfo"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_margin="10dp"
                             android:padding="10dp"
-                            android:src="@drawable/ic_about"
+                            android:src="@drawable/ic_info_night_error"
                             android:tint="@color/white"
                             android:layout_centerVertical="true"
-                            android:layout_alignParentLeft="true"/>
+                            android:layout_alignParentEnd="true"/>
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
+
                         android:layout_height="300dp">
+
                         <RelativeLayout
                             android:id="@+id/LLOpenTikTok"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:background="@drawable/rectangle_white"
+                            android:layout_centerInParent="true"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:padding="30dp"
-                            android:layout_centerVertical="true">
+                            android:padding="30dp">
 
                             <ImageView
                                 android:id="@+id/TVTitle"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
                                 android:layout_centerHorizontal="true"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
                                 android:background="@drawable/circle"
                                 android:padding="12dp"
-                                android:src="@drawable/tiktok_logo" />
+                                android:src="@drawable/ic_tiktok_app_icon_night_error" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -114,7 +114,6 @@
                             android:background="@drawable/et_back"
                             android:hint="@string/paste_link"
                             android:padding="15dp"
-                            android:gravity="right|center_vertical"
                             android:singleLine="true"
                             android:textColor="@color/black"
                             android:textColorHint="@color/grey"
@@ -130,28 +129,28 @@
                             android:orientation="horizontal"
                             android:weightSum="2">
 
-
                             <TextView
-                                android:id="@+id/tvWithoutMark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="2dp"
+                                android:id="@+id/tvWithoutMark"
+
                                 android:layout_weight="1"
                                 android:background="@drawable/et_back"
-                                android:backgroundTint="@color/colorPrimaryDark"
                                 android:gravity="center"
                                 android:padding="14dp"
                                 android:text="@string/without_watermark"
                                 android:textAllCaps="false"
-                                android:textColor="@color/white"
+                                android:textColor="@color/black"
                                 android:textSize="@dimen/with_without_water_mark" />
 
                             <TextView
-                                android:id="@+id/tvWithMark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="2dp"
                                 android:layout_weight="1"
+                                android:id="@+id/tvWithMark"
+
                                 android:background="@drawable/et_back"
                                 android:backgroundTint="@color/colorPrimaryDark"
                                 android:gravity="center"
@@ -160,7 +159,6 @@
                                 android:textAllCaps="false"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/with_without_water_mark" />
-
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -182,6 +180,7 @@
                 </LinearLayout>
             </RelativeLayout>
         </ScrollView>
+
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
             android:layout_width="match_parent"
@@ -189,7 +188,6 @@
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
             ads:adUnitId="@string/admob_banner_ad"/>
-
 
 
     </RelativeLayout>

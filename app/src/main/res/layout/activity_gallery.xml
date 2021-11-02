@@ -19,16 +19,16 @@
             <RelativeLayout
                 android:id="@+id/RLTop"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="45dp">
 
                 <ImageView
                     android:id="@+id/imBack"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_margin="0dp"
                     android:padding="5dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back_night_error" />
 
                 <TextView
                     android:id="@+id/TVTitle"

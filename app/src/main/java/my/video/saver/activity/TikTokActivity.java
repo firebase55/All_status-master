@@ -115,20 +115,9 @@ public class TikTokActivity extends AppCompatActivity {
         //binding.layoutHowTo.imHowto4.setImageResource(R.drawable.tt4);
 
         Glide.with(activity)
-                .load(R.drawable.tt1)
+                .load(R.drawable.tiktok_night_error)
                 .into(binding.layoutHowTo.imHowto1);
 
-        Glide.with(activity)
-                .load(R.drawable.tt2)
-                .into(binding.layoutHowTo.imHowto2);
-
-        Glide.with(activity)
-                .load(R.drawable.tt3)
-                .into(binding.layoutHowTo.imHowto3);
-
-        Glide.with(activity)
-                .load(R.drawable.tt4)
-                .into(binding.layoutHowTo.imHowto4);
 
 
 
